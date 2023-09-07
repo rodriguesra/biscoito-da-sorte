@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #34355B;
+    --secondary-color: #FF9500;
+    --background-color: #E4EDF1;
+    --shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.80);
+    --small-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'DM Sans', sans-serif;
+    --font-tertiary: 'Dancing Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+}
+
+#main-screen, #message-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 26.75rem;
+    padding: 3rem 4rem;
+    text-align: center;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    box-shadow: var(--shadow);
+    gap: 2rem;
+}
+
+#message-screen {
+    display: none;
+    height: 564px;
+    gap: 3rem;
+}
+
+#main-screen h1, #message-screen h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#message-screen h1 {
+    width: 18.5625rem;
+}
+
+#main-screen p, #message-screen p {
+    font-family: var(--font-secondary);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+#message-screen p {
+    font-family: var(--font-tertiary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    background: var(--background-color);
+    box-shadow: var(--small-shadow);
+    gap: 0.625rem;
+}
+
+#message-screen button {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.25rem;
+    background: var(--secondary-color);
+    gap: 0.625rem;
+}
